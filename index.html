@@ -1,0 +1,259 @@
+<!doctype html>
+<html class="landing-document" lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f1ead9" />
+    <meta name="description" content="Beauty Training Demo 是一个互动化妆学习原型，让使用者一步一步练习自然妆，并参与决定下一步教学内容。" />
+    <meta property="og:title" content="Beauty Training Demo" />
+    <meta property="og:description" content="一步一步练习化妆，也一起决定它下一步该教什么。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://cjchan09.github.io/beauty-training-demo/og.png" />
+    <meta property="og:image:alt" content="Beauty Training Demo 互动化妆学习原型" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="./beauty-training-mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Beauty Training Demo | Interactive Makeup Learning Prototype</title>
+  </head>
+  <body>
+    <svg class="icon-sprite" aria-hidden="true">
+      <symbol id="icon-download" viewBox="0 0 15 15">
+        <path d="M7.50005 1.04999C7.74858 1.04999 7.95005 1.25146 7.95005 1.49999V8.41359L10.1819 6.18179C10.3576 6.00605 10.6425 6.00605 10.8182 6.18179C10.994 6.35753 10.994 6.64245 10.8182 6.81819L7.81825 9.81819C7.64251 9.99392 7.35759 9.99392 7.18185 9.81819L4.18185 6.81819C4.00611 6.64245 4.00611 6.35753 4.18185 6.18179C4.35759 6.00605 4.64251 6.00605 4.81825 6.18179L7.05005 8.41359V1.49999C7.05005 1.25146 7.25152 1.04999 7.50005 1.04999ZM2.5 10C2.77614 10 3 10.2239 3 10.5V12C3 12.5539 3.44565 13 3.99635 13H11.0012C11.5529 13 12 12.5528 12 12V10.5C12 10.2239 12.2239 10 12.5 10C12.7761 10 13 10.2239 13 10.5V12C13 13.1041 12.1062 14 11.0012 14H3.99635C2.89019 14 2 13.103 2 12V10.5C2 10.2239 2.22386 10 2.5 10Z" />
+      </symbol>
+      <symbol id="icon-play" viewBox="0 0 15 15">
+        <path d="M3.24182 2.32181C3.3919 2.23132 3.5784 2.22601 3.73338 2.30781L12.7334 7.05781C12.8974 7.14436 13 7.31457 13 7.5C13 7.68543 12.8974 7.85564 12.7334 7.94219L3.73338 12.6922C3.5784 12.774 3.3919 12.7687 3.24182 12.6782C3.09175 12.5877 3 12.4252 3 12.25V2.75C3 2.57476 3.09175 2.4123 3.24182 2.32181ZM4 3.57925V11.4207L11.4288 7.5L4 3.57925Z" />
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 15 15">
+        <path d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z" />
+      </symbol>
+      <symbol id="icon-copy" viewBox="0 0 15 15">
+        <path d="M1 9.50006C1 10.3285 1.67157 11.0001 2.5 11.0001H4V10.0001H2.5C2.22386 10.0001 2 9.7762 2 9.50006V2.50006C2 2.22392 2.22386 2.00006 2.5 2.00006H9.5C9.77614 2.00006 10 2.22392 10 2.50006V4.00002H5.5C4.67158 4.00002 4 4.67159 4 5.50002V12.5C4 13.3284 4.67158 14 5.5 14H12.5C13.3284 14 14 13.3284 14 12.5V5.50002C14 4.67159 13.3284 4.00002 12.5 4.00002H11V2.50006C11 1.67163 10.3284 1.00006 9.5 1.00006H2.5C1.67157 1.00006 1 1.67163 1 2.50006V9.50006ZM5 5.50002C5 5.22388 5.22386 5.00002 5.5 5.00002H12.5C12.7761 5.00002 13 5.22388 13 5.50002V12.5C13 12.7762 12.7761 13 12.5 13H5.5C5.22386 13 5 12.7762 5 12.5V5.50002Z" />
+      </symbol>
+      <symbol id="icon-eye" viewBox="0 0 15 15">
+        <path d="M7.5 11C4.80285 11 2.52952 9.62184 1.09622 7.50001C2.52952 5.37816 4.80285 4 7.5 4C10.1971 4 12.4705 5.37816 13.9038 7.50001C12.4705 9.62183 10.1971 11 7.5 11ZM7.5 3C4.30786 3 1.65639 4.70638 0.0760002 7.23501C-0.0253338 7.39715 -0.0253334 7.60288 0.0760014 7.76501C1.65639 10.2936 4.30786 12 7.5 12C10.6921 12 13.3436 10.2936 14.924 7.76501C15.0253 7.60288 15.0253 7.39715 14.924 7.23501C13.3436 4.70638 10.6921 3 7.5 3ZM7.5 9.5C8.60457 9.5 9.5 8.60457 9.5 7.5C9.5 6.39543 8.60457 5.5 7.5 5.5C6.39543 5.5 5.5 6.39543 5.5 7.5C5.5 8.60457 6.39543 9.5 7.5 9.5Z" />
+      </symbol>
+      <symbol id="icon-camera" viewBox="0 0 15 15">
+        <path d="M2 3C1.44772 3 1 3.44772 1 4V11C1 11.5523 1.44772 12 2 12H13C13.5523 12 14 11.5523 14 11V4C14 3.44772 13.5523 3 13 3H2ZM0 4C0 2.89543 0.895431 2 2 2H13C14.1046 2 15 2.89543 15 4V11C15 12.1046 14.1046 13 13 13H2C0.895431 13 0 12.1046 0 11V4ZM2 4.25C2 4.11193 2.11193 4 2.25 4H4.75C4.88807 4 5 4.11193 5 4.25V5.75454C5 5.89261 4.88807 6.00454 4.75 6.00454H2.25C2.11193 6.00454 2 5.89261 2 5.75454V4.25ZM12.101 7.58421C12.101 9.02073 10.9365 10.1853 9.49998 10.1853C8.06346 10.1853 6.89893 9.02073 6.89893 7.58421C6.89893 6.14769 8.06346 4.98315 9.49998 4.98315C10.9365 4.98315 12.101 6.14769 12.101 7.58421ZM13.101 7.58421C13.101 9.57302 11.4888 11.1853 9.49998 11.1853C7.51117 11.1853 5.89893 9.57302 5.89893 7.58421C5.89893 5.5954 7.51117 3.98315 9.49998 3.98315C11.4888 3.98315 13.101 5.5954 13.101 7.58421Z" />
+      </symbol>
+    </svg>
+
+    <div class="landing-page">
+      <a class="skip-link" href="#main-content">跳到主要内容</a>
+
+      <header class="landing-nav">
+        <a class="landing-brand" href="#top" aria-label="Beauty Training Demo 首页">
+          <span class="brand-mark is-compact" aria-hidden="true"><img src="./beauty-training-mark.svg" alt="" /></span>
+          <span>Beauty Training Demo</span>
+        </a>
+        <nav aria-label="主要导航">
+          <a href="#experience">现有体验</a>
+          <a href="#feedback">参与改进</a>
+          <a href="#brands">品牌合作</a>
+        </nav>
+        <a class="nav-download" data-apk-link href="./downloads/Beauty_Training_Demo_2.6.0_Test.apk" download>
+          <svg class="icon" aria-hidden="true"><use href="#icon-download" /></svg>
+          下载测试版
+        </a>
+      </header>
+
+      <main id="main-content">
+        <section class="landing-hero" id="top" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow">INTERACTIVE MAKEUP LEARNING PROTOTYPE</p>
+            <h1 id="hero-title">Beauty Training Demo</h1>
+            <p class="hero-lead">不是只看教程，而是亲手把每一步慢慢完成。先从自然妆开始，边练习、边发现真正需要被教会的化妆技巧。</p>
+            <div class="hero-actions">
+              <a class="button button-primary" data-demo-link href="http://127.0.0.1:4181/">
+                <svg class="icon" aria-hidden="true"><use href="#icon-play" /></svg>
+                在线体验 Demo
+              </a>
+              <a class="button button-secondary" data-apk-link href="./downloads/Beauty_Training_Demo_2.6.0_Test.apk" download>
+                <svg class="icon" aria-hidden="true"><use href="#icon-download" /></svg>
+                下载 Android 测试版
+              </a>
+            </div>
+            <div class="hero-meta" aria-label="测试版资料">
+              <span><svg class="icon" aria-hidden="true"><use href="#icon-check" /></svg>8 个练习步骤</span>
+              <span><svg class="icon" aria-hidden="true"><use href="#icon-check" /></svg>3 种练习脸型</span>
+              <span><svg class="icon" aria-hidden="true"><use href="#icon-check" /></svg>目前无需登录</span>
+            </div>
+          </div>
+
+          <div class="hero-product" aria-label="Beauty Training Demo 实际画面">
+            <span class="hero-note note-one">刷到哪里，妆效才出现</span>
+            <span class="hero-note note-two">不同脸型使用不同定位</span>
+            <img class="hero-phone" src="./assets/screen-medium.png" alt="App 中正在练习自然底妆的手机画面" width="423" height="952" />
+            <img class="hero-face hero-face-light" src="./assets/screen-light.png" alt="" width="423" height="952" />
+            <img class="hero-face hero-face-deep" src="./assets/screen-deep.png" alt="" width="423" height="952" />
+          </div>
+
+          <a class="hero-next" href="#experience">看它现在能做什么 <span aria-hidden="true">→</span></a>
+        </section>
+
+        <section class="proof-strip" aria-label="产品重点">
+          <span>STEP-BY-STEP</span>
+          <span>FACE-SPECIFIC</span>
+          <span>SHADE-BASED</span>
+          <span>LEARN BY DOING</span>
+        </section>
+
+        <section class="section section-experience" id="experience">
+          <div class="section-heading">
+            <p class="section-index">01 / 现在</p>
+            <h2>先把“怎样化”真正练一遍</h2>
+            <p>当前版本专注单妆教学。每一步都有明确位置、颜色选择和完成进度，让练习不只是按一下就结束。</p>
+          </div>
+
+          <ol class="step-list" aria-label="当前化妆教学步骤">
+            <li><span>01</span><strong>均匀底妆</strong></li>
+            <li><span>02</span><strong>轻扫腮红</strong></li>
+            <li><span>03</span><strong>整理眉形</strong></li>
+            <li><span>04</span><strong>晕染眼影</strong></li>
+            <li><span>05</span><strong>描画眼线</strong></li>
+            <li><span>06</span><strong>试戴美瞳</strong></li>
+            <li><span>07</span><strong>完成唇妆</strong></li>
+            <li><span>08</span><strong>搭配饰品</strong></li>
+          </ol>
+
+          <div class="experience-grid">
+            <article>
+              <svg class="feature-icon" aria-hidden="true"><use href="#icon-check" /></svg>
+              <h3>跟着动作出现</h3>
+              <p>手指经过的地方才慢慢出现妆效，让练习保留“亲手完成”的感觉。</p>
+            </article>
+            <article>
+              <svg class="feature-icon" aria-hidden="true"><use href="#icon-eye" /></svg>
+              <h3>针对不同脸型</h3>
+              <p>浅、中、深三种练习脸型分别校准眼睛、嘴唇和上妆范围。</p>
+            </article>
+            <article>
+              <svg class="feature-icon" aria-hidden="true"><use href="#icon-camera" /></svg>
+              <h3>从正常审美开始</h3>
+              <p>底妆与唇妆以自然、日常色为主，眼影保留少量有趣变化。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section-feedback" id="feedback">
+          <div class="feedback-intro">
+            <p class="section-index">02 / 和观众一起改</p>
+            <h2>这款 App 对你有用吗？</h2>
+            <p>这是我们最想在 YouTube 听见的答案。你可以先组合一份反馈，再直接贴到留言区。</p>
+            <button class="text-action" type="button" data-copy-youtube>
+              <svg class="icon" aria-hidden="true"><use href="#icon-copy" /></svg>
+              复制 YouTube 提问文案
+            </button>
+          </div>
+
+          <form class="feedback-form" id="feedback-form">
+            <fieldset>
+              <legend>你觉得目前的方向：</legend>
+              <div class="segmented-options">
+                <label><input type="radio" name="usefulness" value="有用，我会想继续试" checked /><span>有用，我会想继续试</span></label>
+                <label><input type="radio" name="usefulness" value="有潜力，但还要补内容" /><span>有潜力，但还要补内容</span></label>
+                <label><input type="radio" name="usefulness" value="暂时不适合我" /><span>暂时不适合我</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>你最希望增加什么？</legend>
+              <div class="topic-options">
+                <label><input type="checkbox" name="topic" value="妆前与护肤" /><span>妆前与护肤</span></label>
+                <label><input type="checkbox" name="topic" value="修容与高光" checked /><span>修容与高光</span></label>
+                <label><input type="checkbox" name="topic" value="睫毛教学" /><span>睫毛教学</span></label>
+                <label><input type="checkbox" name="topic" value="更多日常妆容" /><span>更多日常妆容</span></label>
+                <label><input type="checkbox" name="topic" value="品牌色号试妆" /><span>品牌色号试妆</span></label>
+              </div>
+            </fieldset>
+
+            <label class="suggestion-field" for="feedback-suggestion">
+              <span>还有什么应该被教会？</span>
+              <textarea id="feedback-suggestion" name="suggestion" rows="4" placeholder="例如：眼线怎样画得更自然、不同脸型怎样选腮红位置……"></textarea>
+            </label>
+
+            <button class="button button-primary form-copy" type="button" data-copy-feedback>
+              <svg class="icon" aria-hidden="true"><use href="#icon-copy" /></svg>
+              复制我的反馈
+            </button>
+            <p class="copy-status" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+
+        <section class="section section-brands" id="brands">
+          <div class="brand-collab-copy">
+            <p class="section-index">03 / 品牌合作可能</p>
+            <h2>把真实产品与色号，放进可体验的教学里</h2>
+            <p>品牌方可把自己的粉底、眼影、眼线和唇色整理成专属选择，让使用者在学习过程中认识产品，而不是只看到一张广告图。</p>
+            <ul>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check" /></svg>品牌产品与色号资料库</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check" /></svg>围绕产品设计教学步骤</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check" /></svg>从体验反馈了解热门色号</li>
+            </ul>
+          </div>
+
+          <div class="shade-lab" aria-label="未来品牌色号选择概念">
+            <div class="shade-lab-head"><span>BRAND SHADE LAB</span><small>未来概念</small></div>
+            <div class="shade-product">
+              <div class="product-bottle" aria-hidden="true"><span></span></div>
+              <div><strong>Everyday Lip Color</strong><p>选择色号，比较适合自己的上脸感觉。</p></div>
+            </div>
+            <div class="shade-swatches" aria-label="示例唇色色号">
+              <button type="button" aria-label="示例色号 1" style="background:#c86c72"></button>
+              <button type="button" aria-label="示例色号 2" style="background:#b55560"></button>
+              <button type="button" aria-label="示例色号 3" style="background:#984751"></button>
+              <button type="button" aria-label="示例色号 4" style="background:#d99086"></button>
+              <button type="button" aria-label="示例色号 5" style="background:#7f3c45"></button>
+              <button type="button" aria-label="示例色号 6" style="background:#d36b86"></button>
+            </div>
+            <div class="future-preview">
+              <svg class="feature-icon" aria-hidden="true"><use href="#icon-camera" /></svg>
+              <div><strong>未来：直接预览完整妆效</strong><p>选好品牌与色号后，生成近似完成妆的照片，用来判断颜色是否适合自己的脸。</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-roadmap" aria-labelledby="roadmap-title">
+          <div class="section-heading compact-heading">
+            <p class="section-index">04 / 产品路线</p>
+            <h2 id="roadmap-title">教学先做好，试妆再长出来</h2>
+          </div>
+          <div class="roadmap-grid">
+            <article><span>NOW</span><svg class="feature-icon" aria-hidden="true"><use href="#icon-check" /></svg><h3>互动单妆教学</h3><p>把自然妆的每一步练清楚，继续优化妆效、位置与提示。</p></article>
+            <article><span>NEXT</span><svg class="feature-icon" aria-hidden="true"><use href="#icon-copy" /></svg><h3>由真实反馈决定课程</h3><p>根据 YouTube 测试者最常提出的问题，增加真正需要的教学。</p></article>
+            <article><span>FUTURE</span><svg class="feature-icon" aria-hidden="true"><use href="#icon-camera" /></svg><h3>品牌色号一键试妆</h3><p>从逐步学习延伸到完整妆效预览，协助比较产品与色号。</p></article>
+          </div>
+        </section>
+
+        <section class="download-band" id="download">
+          <div>
+            <p class="section-index">ANDROID TEST BUILD · V2.6.0</p>
+            <h2>先用真实操作，告诉我们哪里还不够好。</h2>
+            <p>目前是产品验证版本。安装前请允许浏览器下载 APK；新版会覆盖原来的测试版。</p>
+          </div>
+          <div class="download-actions">
+            <a class="button button-dark" data-apk-link href="./downloads/Beauty_Training_Demo_2.6.0_Test.apk" download>
+              <svg class="icon" aria-hidden="true"><use href="#icon-download" /></svg>
+              下载测试 APK
+            </a>
+            <a class="button button-ghost" data-demo-link href="http://127.0.0.1:4181/">
+              <svg class="icon" aria-hidden="true"><use href="#icon-play" /></svg>
+              先在线体验
+            </a>
+            <small>Android 7.0+ · 约 202 MB · 测试版本</small>
+          </div>
+        </section>
+      </main>
+
+      <footer class="landing-footer">
+        <a class="landing-brand" href="#top">
+          <span class="brand-mark is-compact" aria-hidden="true"><img src="./beauty-training-mark.svg" alt="" /></span>
+          <span>Beauty Training Demo</span>
+        </a>
+        <p>Interactive Makeup Learning Prototype</p>
+        <p>© 2026 · 当前页面用于产品验证与合作讨论。</p>
+      </footer>
+    </div>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
