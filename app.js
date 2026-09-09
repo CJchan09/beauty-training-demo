@@ -333,12 +333,15 @@ async function copyText(value) {
 const isLocal = ["127.0.0.1", "localhost"].includes(window.location.hostname);
 const isVisualPreview = ["raw.githack.com", "rawgit.com"].includes(window.location.hostname);
 const isGithubPreview = window.location.hostname.endsWith("github.io") && window.location.pathname.includes("beauty-training-v2-preview");
+const previewDemoUrl = "https://raw.githack.com/CJchan09/beauty-training-demo/codex/beauty-training-v2-p1p2/demo-v2/?v=7cdd4b1";
 // Local review points to the candidate build. Public links stay on the existing
 // released APK until CJ approves and the release assets are published.
 const apkFileName = isLocal ? "Beauty_Training_Demo_2.7.0_Test.apk" : "Beauty_Training_Demo_2.6.0_Test.apk";
 const demoUrl = isLocal
   ? `${window.location.protocol}//${window.location.hostname}:4182/`
-  : isVisualPreview || isGithubPreview
+  : isVisualPreview
+    ? previewDemoUrl
+  : isGithubPreview
     ? "./demo-v2/"
   : new URL("./demo/", window.location.href).href;
 const apkUrl = isLocal
