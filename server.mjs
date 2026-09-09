@@ -6,8 +6,11 @@ import { fileURLToPath } from "node:url";
 const root = dirname(fileURLToPath(import.meta.url));
 const projectRoot = resolve(root, "..");
 const port = Number(process.env.PORT || 4190);
-const apkFileName = "Beauty_Training_Demo_2.6.0_Test.apk";
-const apkPath = join(projectRoot, apkFileName);
+const host = process.env.BEAUTY_LANDING_HOST || "127.0.0.1";
+const apkFiles = new Map([
+  "Beauty_Training_Demo_2.6.0_Test.apk",
+  "Beauty_Training_Demo_2.7.0_Test.apk",
+].map((fileName) => [fileName, join(projectRoot, fileName)]));
 
 const mimeTypes = {
   ".css": "text/css; charset=utf-8",
@@ -79,8 +82,9 @@ const server = createServer((request, response) => {
   }
 
   const url = new URL(request.url, `http://${request.headers.host || "127.0.0.1"}`);
-  if (url.pathname === `/downloads/${apkFileName}`) {
-    serveFile(request, response, apkPath, "application/vnd.android.package-archive", apkFileName);
+  const requestedApk = url.pathname.startsWith('/downloads/') ? url.pathname.slice('/downloads/'.length) : '';
+  if (apkFiles.has(requestedApk)) {
+    serveFile(request, response, apkFiles.get(requestedApk), "application/vnd.android.package-archive", requestedApk);
     return;
   }
 
@@ -100,6 +104,6 @@ const server = createServer((request, response) => {
   serveFile(request, response, filePath, mimeTypes[extname(filePath).toLowerCase()] || "application/octet-stream");
 });
 
-server.listen(port, "0.0.0.0", () => {
+server.listen(port, host, () => {
   console.log(`Beauty Training Demo landing page: http://127.0.0.1:${port}/`);
 });

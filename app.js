@@ -92,9 +92,97 @@ const textPairs = {
   "下载测试 APK": "Download test APK",
   "先在线体验": "Try online first",
   "Android 7.0+ · 约 202 MB · 测试版本": "Android 7.0+ · About 202 MB · Test build",
+  "ANDROID TEST BUILD · V2.7.0": "ANDROID TEST BUILD · V2.7.0",
+  "Android 7.0+ · 约 216 MiB（227 MB）· 本地测试版": "Android 7.0+ · About 216 MiB (227 MB) · Local test build",
   "Interactive Makeup Learning Prototype": "Interactive Makeup Learning Prototype",
   "© 2026 · 当前页面用于产品验证与合作讨论。": "© 2026 · This page is for product validation and partnership discussion.",
 };
+
+Object.assign(textPairs, {
+  "把色彩，": "PLAY.",
+  "玩上脸。": "YOUR WAY.",
+  "一笔腮红，一抹唇色。从第一步开始，亲手练出属于你的自然妆。": "A touch of blush. A little lip colour. Find your own everyday look, one hands-on step at a time.",
+  "开始玩妆": "Let's play",
+  "步骤，慢慢来": "steps, your pace",
+  "打开你的化妆台": "Open your beauty table",
+  "暂停动画": "Pause motion",
+  "开启动画": "Play motion",
+  "每一笔，": "Every brushstroke.",
+  "都有新发现。": "A new discovery.",
+  "向右滑动，探索化妆台": "Swipe to explore your beauty table",
+  "往下滚动，探索化妆台": "Scroll to explore your beauty table",
+  "唇色，随心情。": "Colour your mood.",
+  "从温柔裸粉到莓果红，试着找到今天喜欢的颜色。": "From soft rose to berry red, find the shade that feels like you today.",
+  "轻一点，刚刚好。": "Keep it soft.",
+  "一点腮红，轻轻晕开。自然好气色，从柔和的一笔开始。": "A little blush, softly blended. Bring out a natural glow with one gentle brushstroke.",
+  "亲手化，才好玩。": "The fun is doing it.",
+  "让手指成为你的化妆刷，在每一次尝试里更有把握。": "Turn your fingertip into a makeup brush and build confidence with every try.",
+  "拿起你的第一支刷": "Pick up your first brush",
+  "不同的脸。": "Different faces.",
+  "一样自在地玩。": "Same freedom to play.",
+  "浅、中、深三种练习脸。每一张，都有自己的五官定位与自然妆练习。": "Three practice faces: light, medium and deep. Each has its own feature placement and natural-look lesson.",
+  "浅肤色": "Light skin",
+  "中肤色": "Medium skin",
+  "深肤色": "Deep skin",
+  "以上为当前教学 App 实际画面。": "Actual screens from the current teaching app.",
+  "好看的妆，": "Your look.",
+  "一步一步来。": "One step at a time.",
+  "薄薄一层，刚好。": "Just one light layer.",
+  "从脸中央向外推开，留下自然的光泽与自己的肤质。": "Blend outward from the centre and keep your natural skin texture glowing.",
+  "轻轻定妆，保留光。": "Set softly, keep the light.",
+  "粉饼是小小的收尾动作，让妆感清爽又不遮住表情。": "A small finishing step for a fresh look that keeps your expressions visible.",
+  "颜色，慢慢叠。": "Build colour slowly.",
+  "先从浅色开始，再加一点莓红或淡紫，练习看见层次。": "Start light, then add berry or lavender and learn to see the layers.",
+  "睫毛，轻轻提气。": "Lift the eyes softly.",
+  "把刷头靠近睫毛根部，慢慢向上，眼神就有了精神。": "Start at the roots and sweep upward to wake up the eyes.",
+  "最后一抹，亮起来。": "Finish with a little shine.",
+  "透明的光泽叠在喜欢的唇色上，完成属于你的日常妆。": "Layer a clear gloss over your favourite lip colour to finish your everyday look.",
+  "去试试照片试妆": "Try photo try-on",
+  "浅肤色 · 唇色练习": "Light skin · lip practice",
+  "中肤色 · 唇色练习": "Medium skin · lip practice",
+  "深肤色 · 唇色练习": "Deep skin · lip practice",
+  "妆前": "Before",
+  "唇色练习后": "After lip practice",
+  "三种练习脸的妆前妆后对比": "Before and after across three practice faces",
+  "前后图来自现有练习脸与唇色目标资产，用于展示教学范围，不代表任意自拍效果。": "These before-and-after images use existing practice-face and lip-target assets. They show the lesson range, not a promise for every selfie.",
+});
+
+const attributePairs = {
+  "Beauty Training Demo 首页": "Beauty Training Demo home",
+  "主要导航": "Main navigation",
+  "测试版资料": "Test build details",
+  "Beauty Training Demo 实际画面": "Actual Beauty Training Demo screen",
+  "App 中正在练习自然底妆的手机画面": "Actual app screen practicing a natural base",
+  "产品重点": "Product highlights",
+  "化妆品展示，可左右滚动": "Makeup showcase, scroll horizontally to explore",
+  "无品牌鲜粉色口红": "Unbranded vivid-pink lipstick",
+  "无品牌粉色腮红盘": "Unbranded pink blush compact",
+  "无品牌柔软化妆刷": "Unbranded soft makeup brush",
+  "浅肤色练习脸的真实 App 画面": "Actual app screen with the light-skin practice face",
+  "中肤色练习脸的真实 App 画面": "Actual app screen with the medium-skin practice face",
+  "深肤色练习脸的真实 App 画面": "Actual app screen with the deep-skin practice face",
+  "无品牌暖米色粉底瓶": "Unbranded warm-beige foundation bottle",
+  "无品牌浅米色粉饼": "Unbranded ivory pressed powder compact",
+  "无品牌玫瑰紫六色眼影盘": "Unbranded rose-plum six-pan eyeshadow palette",
+  "无品牌莓红盖睫毛膏": "Unbranded berry-cap mascara",
+  "无品牌莓果色唇彩": "Unbranded berry lip gloss",
+  "浅肤色练习脸妆前": "Light-skin practice face before lip practice",
+  "浅肤色练习脸完成唇色后": "Light-skin practice face after lip practice",
+  "中肤色练习脸妆前": "Medium-skin practice face before lip practice",
+  "中肤色练习脸完成唇色后": "Medium-skin practice face after lip practice",
+  "深肤色练习脸妆前": "Deep-skin practice face before lip practice",
+  "深肤色练习脸完成唇色后": "Deep-skin practice face after lip practice",
+  "当前化妆教学步骤": "Current makeup lesson steps",
+  "未来品牌色号选择概念": "Future brand shade concept",
+  "示例唇色色号": "Example lip shades",
+  "三种练习脸的妆前妆后对比": "Before and after across three practice faces",
+};
+document.querySelectorAll('.shade-swatches button').forEach((button, index) => {
+  attributePairs[`示例色号 ${index + 1}`] = `Example shade ${index + 1}`;
+});
+const originalAttributes = [...document.querySelectorAll('[alt], [aria-label]')].flatMap((element) =>
+  ['alt', 'aria-label'].filter((attribute) => element.hasAttribute(attribute)).map((attribute) => ({ element, attribute, value: element.getAttribute(attribute) })),
+);
 
 const zhTexts = {};
 Object.entries(textPairs).forEach(([zh, en]) => {
@@ -184,6 +272,12 @@ function translatePage(lang) {
   const nodes = [];
   while (walker.nextNode()) nodes.push(walker.currentNode);
   nodes.forEach((node) => replaceTextNode(node, lang));
+  originalAttributes.forEach(({ element, attribute, value }) => {
+    element.setAttribute(attribute, lang === 'en' ? (attributePairs[value] || value) : value);
+  });
+  document.querySelector('.nav-download')?.setAttribute('aria-label', lang === 'en' ? 'Download Android test build' : '下载 Android 测试版');
+  document.querySelector('[data-lang-toggle]')?.setAttribute('aria-label', lang === 'en' ? '切换到中文' : 'Switch to English');
+  if (status) status.textContent = '';
 
   const suggestion = document.querySelector("#feedback-suggestion");
   if (suggestion instanceof HTMLTextAreaElement) {
@@ -212,13 +306,17 @@ function translatePage(lang) {
         : "一步一步练习化妆，也一起决定它下一步该教什么。",
     );
 
-  window.localStorage.setItem("beautyTrainingLandingLang", lang);
+  try { window.localStorage.setItem("beautyTrainingLandingLang", lang); } catch { /* Private browsing may disable storage. */ }
+  window.dispatchEvent(new Event('landing:language'));
+  window.ScrollTrigger?.refresh();
 }
 
 async function copyText(value) {
   if (navigator.clipboard?.writeText) {
-    await navigator.clipboard.writeText(value);
-    return;
+    try {
+      await navigator.clipboard.writeText(value);
+      return;
+    } catch { /* Fall through for non-secure previews or denied clipboard access. */ }
   }
 
   const textarea = document.createElement("textarea");
@@ -227,14 +325,17 @@ async function copyText(value) {
   textarea.style.opacity = "0";
   document.body.appendChild(textarea);
   textarea.select();
-  document.execCommand("copy");
+  const copied = document.execCommand("copy");
   textarea.remove();
+  if (!copied) throw new Error('Clipboard unavailable');
 }
 
 const isLocal = ["127.0.0.1", "localhost"].includes(window.location.hostname);
-const apkFileName = "Beauty_Training_Demo_2.6.0_Test.apk";
+// Local review points to the candidate build. Public links stay on the existing
+// released APK until CJ approves and the release assets are published.
+const apkFileName = isLocal ? "Beauty_Training_Demo_2.7.0_Test.apk" : "Beauty_Training_Demo_2.6.0_Test.apk";
 const demoUrl = isLocal
-  ? `${window.location.protocol}//${window.location.hostname}:4181/`
+  ? `${window.location.protocol}//${window.location.hostname}:4182/`
   : new URL("./demo/", window.location.href).href;
 const apkUrl = isLocal
   ? `./downloads/${apkFileName}`
@@ -246,9 +347,16 @@ document.querySelectorAll("[data-demo-link]").forEach((link) => {
 
 document.querySelectorAll("[data-apk-link]").forEach((link) => {
   link.href = apkUrl;
+  link.download = apkFileName;
 });
 
-const savedLang = window.localStorage.getItem("beautyTrainingLandingLang");
+if (isLocal) {
+  document.querySelector('[data-apk-version]').textContent = 'ANDROID TEST BUILD · V2.7.0';
+  document.querySelector('[data-apk-details]').textContent = 'Android 7.0+ · 约 216 MiB（227 MB）· 本地测试版';
+}
+
+let savedLang;
+try { savedLang = window.localStorage.getItem("beautyTrainingLandingLang"); } catch { /* Language still works without persistence. */ }
 translatePage(savedLang === "en" ? "en" : "zh");
 
 document.querySelector("[data-lang-toggle]")?.addEventListener("click", () => {
@@ -256,8 +364,12 @@ document.querySelector("[data-lang-toggle]")?.addEventListener("click", () => {
 });
 
 document.querySelector("[data-copy-youtube]")?.addEventListener("click", async () => {
-  await copyText(copyContent[currentLang].youtube);
-  setStatus(copyContent[currentLang].youtubeStatus);
+  try {
+    await copyText(copyContent[currentLang].youtube);
+    setStatus(copyContent[currentLang].youtubeStatus);
+  } catch {
+    setStatus(currentLang === 'en' ? 'Copy was blocked. Please allow clipboard access and try again.' : '复制被浏览器阻止，请允许剪贴板权限后重试。');
+  }
 });
 
 document.querySelector("[data-copy-feedback]")?.addEventListener("click", async () => {
@@ -275,6 +387,146 @@ document.querySelector("[data-copy-feedback]")?.addEventListener("click", async 
     `${copyContent[currentLang].suggestion}${suggestion || copyContent[currentLang].none}`,
   ].join("\n");
 
-  await copyText(message);
-  setStatus(copyContent[currentLang].status);
+  try {
+    await copyText(message);
+    setStatus(copyContent[currentLang].status);
+  } catch {
+    setStatus(currentLang === 'en' ? 'Copy was blocked. Please allow clipboard access and try again.' : '复制被浏览器阻止，请允许剪贴板权限后重试。');
+  }
 });
+
+// The shade lab remains an explicitly labelled future concept; selection only
+// changes its sample swatch, never simulates a brand result or a live try-on.
+document.querySelectorAll('.shade-swatches button').forEach((button, index) => {
+  button.setAttribute('aria-pressed', String(index === 0));
+  button.addEventListener('click', () => {
+    document.querySelectorAll('.shade-swatches button').forEach((swatch) => swatch.setAttribute('aria-pressed', String(swatch === button)));
+    document.querySelector('.shade-lab')?.style.setProperty('--selected-shade', button.style.backgroundColor);
+  });
+});
+
+// Enhancement only: every chapter is visible and swipeable without GSAP.
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const motionButton = document.querySelector('[data-motion-toggle]');
+const table = document.querySelector('.makeup-table');
+const tableViewport = document.querySelector('.table-viewport');
+const track = document.querySelector('.table-track');
+const progressBar = document.querySelector('.table-progress span');
+let motionPaused = false;
+let mediaContext;
+let floatTweens = [];
+let heroObserver;
+let heroVisible = true;
+let tableTrigger;
+try { motionPaused = window.localStorage.getItem('beautyTrainingMotionPaused') === 'true'; } catch { /* Optional preference. */ }
+
+function updateMotionLabels() {
+  motionButton?.setAttribute('aria-pressed', String(motionPaused));
+  if (motionButton) motionButton.textContent = currentLang === 'en' ? (motionPaused ? 'Play motion' : 'Pause motion') : (motionPaused ? '开启动画' : '暂停动画');
+  const hint = document.querySelector('.table-hint');
+  if (hint) {
+    const text = table?.classList.contains('is-pinned')
+      ? (currentLang === 'en' ? 'Scroll to explore your beauty table ↓' : '往下滚动，探索化妆台 ↓')
+      : (currentLang === 'en' ? 'Swipe to explore your beauty table →' : '向右滑动，探索化妆台 →');
+    hint.textContent = text;
+    hint.hidden = reducedMotion.matches;
+  }
+}
+
+function syncFloatingMotion() {
+  const canPlay = !document.hidden && heroVisible && !motionPaused && !reducedMotion.matches;
+  floatTweens.forEach((tween) => canPlay ? tween.resume() : tween.pause());
+}
+
+function updateNativeProgress() {
+  if (!tableViewport || !progressBar || tableTrigger) return;
+  const distance = tableViewport.scrollWidth - tableViewport.clientWidth;
+  const progress = distance > 0 ? tableViewport.scrollLeft / distance : 1;
+  progressBar.style.transform = `scaleX(${.07 + .93 * progress})`;
+}
+
+function setupMotion() {
+  heroObserver?.disconnect();
+  heroObserver = undefined;
+  mediaContext?.revert();
+  mediaContext = undefined;
+  floatTweens = [];
+  tableTrigger = undefined;
+  table?.classList.remove('is-pinned');
+  if (tableViewport) tableViewport.scrollLeft = 0;
+
+  const gsap = window.gsap;
+  const ScrollTrigger = window.ScrollTrigger;
+  if (!gsap || !ScrollTrigger || reducedMotion.matches || motionPaused) {
+    if (motionButton) motionButton.hidden = !gsap || reducedMotion.matches;
+    updateMotionLabels();
+    updateNativeProgress();
+    return;
+  }
+  if (motionButton) motionButton.hidden = false;
+  gsap.registerPlugin(ScrollTrigger);
+  mediaContext = gsap.matchMedia();
+  mediaContext.add({ desktop: '(min-width: 1000px) and (min-height: 700px) and (pointer: fine)', mobile: '(max-width: 999px), (max-height: 699px), (pointer: coarse)' }, (context) => {
+    const { desktop } = context.conditions;
+    const props = gsap.utils.toArray('.hero-prop');
+    const entrance = gsap.timeline({ defaults: { ease: 'power3.out' } });
+    entrance.from('.hero-copy > *', { opacity: 0, y: 22, stagger: .075, duration: desktop ? .8 : .45 }, 0)
+      .from('.hero-phone-wrap', { opacity: 0, y: desktop ? 70 : 20, rotation: 3, duration: desktop ? 1.2 : .65 }, .1);
+    props.forEach((prop, index) => {
+      entrance.from(prop, { opacity: 0, x: desktop ? Number(prop.dataset.enterX) : Number(prop.dataset.enterX) * .3, y: desktop ? Number(prop.dataset.enterY) : Number(prop.dataset.enterY) * .3, duration: desktop ? 1.15 : .6 }, .25 + index * .1);
+      const float = gsap.to(prop.querySelector('img'), { y: desktop ? -14 - index * 2 : -6, rotation: desktop ? (index % 2 ? -3 : 3) : 1.5, duration: 3.2 + index * .55, delay: 1.5 + index * .2, ease: 'sine.inOut', repeat: -1, yoyo: true });
+      floatTweens.push(float);
+    });
+    gsap.utils.toArray('.face-study').forEach((element, index) => gsap.from(element, { opacity: 0, y: desktop ? 50 : 20, duration: .7, delay: index * .08, ease: 'power2.out', scrollTrigger: { trigger: '.face-gallery', start: 'top 88%', once: true } }));
+
+    if (desktop && table && tableViewport && track) {
+      table.classList.add('is-pinned');
+      const distance = () => Math.max(0, track.scrollWidth - tableViewport.clientWidth);
+      const tween = gsap.to(track, {
+        x: () => -distance(), ease: 'none',
+        scrollTrigger: {
+          trigger: table, start: 'top top', end: () => `+=${Math.round(distance() * .85)}`,
+          pin: true, scrub: .55, anticipatePin: 1, invalidateOnRefresh: true,
+          onUpdate(self) { if (progressBar) progressBar.style.transform = `scaleX(${.07 + .93 * self.progress})`; },
+        },
+      });
+      tableTrigger = tween.scrollTrigger;
+    }
+    updateMotionLabels();
+    syncFloatingMotion();
+    return () => {
+      table?.classList.remove('is-pinned');
+      tableTrigger = undefined;
+      floatTweens = [];
+      updateMotionLabels();
+      updateNativeProgress();
+    };
+  });
+  if ('IntersectionObserver' in window) {
+    heroObserver = new IntersectionObserver(([entry]) => { heroVisible = entry.isIntersecting; syncFloatingMotion(); }, { threshold: 0 });
+    const hero = document.querySelector('.landing-hero');
+    if (hero) heroObserver.observe(hero);
+  }
+  syncFloatingMotion();
+  updateMotionLabels();
+}
+
+motionButton?.addEventListener('click', () => {
+  motionPaused = !motionPaused;
+  try { window.localStorage.setItem('beautyTrainingMotionPaused', String(motionPaused)); } catch { /* Optional preference. */ }
+  setupMotion();
+});
+reducedMotion.addEventListener('change', setupMotion);
+document.addEventListener('visibilitychange', syncFloatingMotion);
+window.addEventListener('landing:language', updateMotionLabels);
+tableViewport?.addEventListener('scroll', updateNativeProgress, { passive: true });
+tableViewport?.addEventListener('keydown', (event) => {
+  if (!tableTrigger || !['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+  event.preventDefault();
+  const increment = event.key === 'ArrowRight' ? .5 : -.5;
+  const progress = event.key === 'Home' ? 0 : event.key === 'End' ? 1 : Math.min(1, Math.max(0, tableTrigger.progress + increment));
+  window.scrollTo({ top: tableTrigger.start + progress * (tableTrigger.end - tableTrigger.start), behavior: 'smooth' });
+});
+window.addEventListener('resize', updateNativeProgress, { passive: true });
+window.addEventListener('load', () => window.ScrollTrigger?.refresh(), { once: true });
+setupMotion();

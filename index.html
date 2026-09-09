@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f1ead9" />
+    <meta name="theme-color" content="#fff4f6" />
     <meta name="description" content="Beauty Training Demo 是一个互动化妆学习原型，让使用者一步一步练习自然妆，并参与决定下一步教学内容。" />
     <meta property="og:title" content="Beauty Training Demo" />
     <meta property="og:description" content="一步一步练习化妆，也一起决定它下一步该教什么。" />
@@ -43,7 +43,7 @@
       <header class="landing-nav">
         <a class="landing-brand" href="#top" aria-label="Beauty Training Demo 首页">
           <span class="brand-mark is-compact" aria-hidden="true"><img src="./beauty-training-mark.svg" alt="" /></span>
-          <span>Beauty Training Demo</span>
+          <span>Beauty Training<span class="brand-beta">PLAY · LEARN · CREATE</span></span>
         </a>
         <nav aria-label="主要导航">
           <a href="#experience">现有体验</a>
@@ -63,13 +63,13 @@
       <main id="main-content">
         <section class="landing-hero" id="top" aria-labelledby="hero-title">
           <div class="hero-copy">
-            <p class="eyebrow">INTERACTIVE MAKEUP LEARNING PROTOTYPE</p>
-            <h1 id="hero-title">Beauty Training Demo</h1>
-            <p class="hero-lead">不是只看教程，而是亲手把每一步慢慢完成。先从自然妆开始，边练习、边发现真正需要被教会的化妆技巧。</p>
+            <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>YOUR LITTLE BEAUTY PLAYGROUND</p>
+            <h1 id="hero-title"><span>把色彩，</span><span class="hero-title-accent">玩上脸。</span></h1>
+            <p class="hero-lead">一笔腮红，一抹唇色。从第一步开始，亲手练出属于你的自然妆。</p>
             <div class="hero-actions">
-              <a class="button button-primary" data-demo-link href="http://127.0.0.1:4181/">
+              <a class="button button-primary" data-demo-link href="./demo/">
                 <svg class="icon" aria-hidden="true"><use href="#icon-play" /></svg>
-                在线体验 Demo
+                开始玩妆
               </a>
               <a class="button button-secondary" data-apk-link href="./downloads/Beauty_Training_Demo_2.6.0_Test.apk" download>
                 <svg class="icon" aria-hidden="true"><use href="#icon-download" /></svg>
@@ -84,14 +84,18 @@
           </div>
 
           <div class="hero-product" aria-label="Beauty Training Demo 实际画面">
-            <span class="hero-note note-one">刷到哪里，妆效才出现</span>
-            <span class="hero-note note-two">不同脸型使用不同定位</span>
-            <img class="hero-phone" src="./assets/screen-medium.png" alt="App 中正在练习自然底妆的手机画面" width="423" height="952" />
-            <img class="hero-face hero-face-light" src="./assets/screen-light.png" alt="" width="423" height="952" />
-            <img class="hero-face hero-face-deep" src="./assets/screen-deep.png" alt="" width="423" height="952" />
+            <div class="hero-orbit" aria-hidden="true"></div>
+            <span class="hero-script" aria-hidden="true">make it yours.</span>
+            <div class="hero-phone-wrap"><img class="hero-phone" src="./assets/screen-medium.png" alt="App 中正在练习自然底妆的手机画面" width="423" height="952" fetchpriority="high" /></div>
+            <div class="hero-prop hero-prop-lipstick" data-enter-x="-110" data-enter-y="80" aria-hidden="true"><img src="./assets/v2/lipstick.png" alt="" width="700" height="700" /></div>
+            <div class="hero-prop hero-prop-compact" data-enter-x="90" data-enter-y="-65" aria-hidden="true"><img src="./assets/v2/compact.png" alt="" width="700" height="700" /></div>
+            <div class="hero-prop hero-prop-brush" data-enter-x="100" data-enter-y="120" aria-hidden="true"><img src="./assets/v2/brush.png" alt="" width="700" height="700" /></div>
+            <span class="hero-note note-one"><svg class="icon" aria-hidden="true"><use href="#icon-check" /></svg>刷到哪里，妆效才出现</span>
+            <span class="hero-stamp"><strong>8</strong><span>步骤，慢慢来</span></span>
           </div>
 
-          <a class="hero-next" href="#experience">看它现在能做什么 <span aria-hidden="true">→</span></a>
+          <a class="hero-next" href="#makeup-table"><span class="scroll-dot" aria-hidden="true">↓</span>打开你的化妆台</a>
+          <button class="motion-toggle" type="button" data-motion-toggle aria-pressed="false">暂停动画</button>
         </section>
 
         <section class="proof-strip" aria-label="产品重点">
@@ -101,10 +105,75 @@
           <span>LEARN BY DOING</span>
         </section>
 
+        <section class="makeup-table" id="makeup-table" aria-labelledby="table-title">
+          <div class="table-heading"><p class="section-index">01 / THE BEAUTY TABLE</p><h2 id="table-title">每一笔，<em>都有新发现。</em></h2><p class="table-hint">向右滑动，探索化妆台 <span aria-hidden="true">→</span></p></div>
+          <div class="table-viewport" tabindex="0" role="region" aria-label="化妆品展示，可左右滚动">
+            <div class="table-track">
+              <article class="table-scene scene-lips">
+                <span class="scene-number" aria-hidden="true">01</span><span class="scene-word" aria-hidden="true">LIPS</span>
+                <div class="scene-art"><div class="lip-swipe" aria-hidden="true"></div><img src="./assets/v2/lipstick.png" alt="无品牌鲜粉色口红" width="700" height="700" loading="lazy" /></div>
+                <div class="scene-copy"><p class="eyebrow">A LITTLE COLOUR</p><h3>唇色，随心情。</h3><p>从温柔裸粉到莓果红，试着找到今天喜欢的颜色。</p><div class="decorative-swatches" aria-hidden="true"><i style="--swatch:#c98681"></i><i style="--swatch:#bb5265"></i><i style="--swatch:#8c2945"></i></div></div>
+              </article>
+              <article class="table-scene scene-base">
+                <span class="scene-number" aria-hidden="true">02</span><span class="scene-word" aria-hidden="true">GLOW</span>
+                <div class="scene-art"><div class="powder-disc" aria-hidden="true"></div><img src="./assets/v2/compact.png" alt="无品牌粉色腮红盘" width="700" height="700" loading="lazy" /></div>
+                <div class="scene-copy"><p class="eyebrow">START SOFT</p><h3>轻一点，刚刚好。</h3><p>一点腮红，轻轻晕开。自然好气色，从柔和的一笔开始。</p><div class="decorative-swatches" aria-hidden="true"><i style="--swatch:#edc3a8"></i><i style="--swatch:#c58d68"></i><i style="--swatch:#89573e"></i></div></div>
+              </article>
+              <article class="table-scene scene-brush">
+                <span class="scene-number" aria-hidden="true">03</span><span class="scene-word" aria-hidden="true">PLAY</span>
+                <div class="scene-art"><div class="brush-loop" aria-hidden="true"></div><img src="./assets/v2/brush.png" alt="无品牌柔软化妆刷" width="700" height="700" loading="lazy" /></div>
+                <div class="scene-copy"><p class="eyebrow">YOUR HANDS, YOUR LOOK</p><h3>亲手化，才好玩。</h3><p>让手指成为你的化妆刷，在每一次尝试里更有把握。</p><a class="text-action" data-demo-link href="./demo/">拿起你的第一支刷 <span aria-hidden="true">↗</span></a></div>
+              </article>
+              <article class="table-scene scene-foundation">
+                <span class="scene-number" aria-hidden="true">04</span><span class="scene-word" aria-hidden="true">BASE</span>
+                <div class="scene-art"><div class="foundation-glow" aria-hidden="true"></div><img src="./assets/v2/foundation.png" alt="无品牌暖米色粉底瓶" width="700" height="700" loading="lazy" /></div>
+                <div class="scene-copy"><p class="eyebrow">START EVEN</p><h3>薄薄一层，刚好。</h3><p>从脸中央向外推开，留下自然的光泽与自己的肤质。</p><div class="decorative-swatches" aria-hidden="true"><i style="--swatch:#e7b58c"></i><i style="--swatch:#c98d65"></i><i style="--swatch:#a96c50"></i></div></div>
+              </article>
+              <article class="table-scene scene-powder">
+                <span class="scene-number" aria-hidden="true">05</span><span class="scene-word" aria-hidden="true">SET</span>
+                <div class="scene-art"><div class="powder-cloud" aria-hidden="true"></div><img src="./assets/v2/powder.png" alt="无品牌浅米色粉饼" width="700" height="700" loading="lazy" /></div>
+                <div class="scene-copy"><p class="eyebrow">SOFT FOCUS</p><h3>轻轻定妆，保留光。</h3><p>粉饼是小小的收尾动作，让妆感清爽又不遮住表情。</p><div class="decorative-swatches" aria-hidden="true"><i style="--swatch:#f4dfc9"></i><i style="--swatch:#e7c5a8"></i><i style="--swatch:#cf9e7f"></i></div></div>
+              </article>
+              <article class="table-scene scene-eyeshadow">
+                <span class="scene-number" aria-hidden="true">06</span><span class="scene-word" aria-hidden="true">PLAY</span>
+                <div class="scene-art"><div class="shadow-sparkle" aria-hidden="true"></div><img src="./assets/v2/eyeshadow.png" alt="无品牌玫瑰紫六色眼影盘" width="700" height="700" loading="lazy" /></div>
+                <div class="scene-copy"><p class="eyebrow">A LITTLE PLAY</p><h3>颜色，慢慢叠。</h3><p>先从浅色开始，再加一点莓红或淡紫，练习看见层次。</p><div class="decorative-swatches" aria-hidden="true"><i style="--swatch:#e6c8c0"></i><i style="--swatch:#c47c8e"></i><i style="--swatch:#8b4661"></i></div></div>
+              </article>
+              <article class="table-scene scene-mascara">
+                <span class="scene-number" aria-hidden="true">07</span><span class="scene-word" aria-hidden="true">FRAME</span>
+                <div class="scene-art"><div class="lash-line" aria-hidden="true"></div><img src="./assets/v2/mascara.png" alt="无品牌莓红盖睫毛膏" width="700" height="700" loading="lazy" /></div>
+                <div class="scene-copy"><p class="eyebrow">FRAME THE EYES</p><h3>睫毛，轻轻提气。</h3><p>把刷头靠近睫毛根部，慢慢向上，眼神就有了精神。</p><div class="decorative-swatches" aria-hidden="true"><i style="--swatch:#1f1820"></i><i style="--swatch:#692541"></i><i style="--swatch:#d52d76"></i></div></div>
+              </article>
+              <article class="table-scene scene-gloss">
+                <span class="scene-number" aria-hidden="true">08</span><span class="scene-word" aria-hidden="true">SHINE</span>
+                <div class="scene-art"><div class="gloss-shine" aria-hidden="true"></div><img src="./assets/v2/gloss.png" alt="无品牌莓果色唇彩" width="700" height="700" loading="lazy" /></div>
+                <div class="scene-copy"><p class="eyebrow">FINISH WITH LIGHT</p><h3>最后一抹，亮起来。</h3><p>透明的光泽叠在喜欢的唇色上，完成属于你的日常妆。</p><a class="text-action" data-demo-link href="./demo/">去试试照片试妆 <span aria-hidden="true">↗</span></a></div>
+              </article>
+            </div>
+          </div>
+          <div class="table-navigation"><span>01 — 08</span><div class="table-progress" aria-hidden="true"><span></span></div><span>EXPLORE YOUR COLOURS</span></div>
+        </section>
+
+        <section class="section section-faces" id="faces" aria-labelledby="faces-title">
+          <div class="face-heading"><p class="section-index">02 / REAL PRACTICE</p><h2 id="faces-title">不同的脸。<br /><em>一样自在地玩。</em></h2><p>浅、中、深三种练习脸。每一张，都有自己的五官定位与自然妆练习。</p></div>
+          <div class="face-gallery">
+            <figure class="face-study face-light"><div class="face-preview"><span aria-hidden="true">01</span><img src="./assets/screen-light.png" alt="浅肤色练习脸的真实 App 画面" width="423" height="952" loading="lazy" /></div><figcaption><strong>浅肤色</strong><span>LIGHT</span></figcaption></figure>
+            <figure class="face-study face-medium"><div class="face-preview"><span aria-hidden="true">02</span><img src="./assets/screen-medium.png" alt="中肤色练习脸的真实 App 画面" width="423" height="952" loading="lazy" /></div><figcaption><strong>中肤色</strong><span>MEDIUM</span></figcaption></figure>
+            <figure class="face-study face-deep"><div class="face-preview"><span aria-hidden="true">03</span><img src="./assets/screen-deep.png" alt="深肤色练习脸的真实 App 画面" width="423" height="952" loading="lazy" /></div><figcaption><strong>深肤色</strong><span>DEEP</span></figcaption></figure>
+          </div>
+          <p class="photo-caption">以上为当前教学 App 实际画面。</p>
+          <div class="face-pairs" aria-label="三种练习脸的妆前妆后对比">
+            <figure class="face-pair face-light"><div class="face-pair-images"><div><span>妆前</span><img src="./assets/v2/faces/light-before.webp" alt="浅肤色练习脸妆前" width="640" height="960" loading="lazy" /></div><div><span>唇色练习后</span><img src="./assets/v2/faces/light-after.webp" alt="浅肤色练习脸完成唇色后" width="640" height="960" loading="lazy" /></div></div><figcaption><strong>浅肤色 · 唇色练习</strong><span>BEFORE / AFTER</span></figcaption></figure>
+            <figure class="face-pair face-medium"><div class="face-pair-images"><div><span>妆前</span><img src="./assets/v2/faces/medium-before.webp" alt="中肤色练习脸妆前" width="640" height="960" loading="lazy" /></div><div><span>唇色练习后</span><img src="./assets/v2/faces/medium-after.webp" alt="中肤色练习脸完成唇色后" width="640" height="960" loading="lazy" /></div></div><figcaption><strong>中肤色 · 唇色练习</strong><span>BEFORE / AFTER</span></figcaption></figure>
+            <figure class="face-pair face-deep"><div class="face-pair-images"><div><span>妆前</span><img src="./assets/v2/faces/deep-before.webp" alt="深肤色练习脸妆前" width="640" height="960" loading="lazy" /></div><div><span>唇色练习后</span><img src="./assets/v2/faces/deep-after.webp" alt="深肤色练习脸完成唇色后" width="640" height="960" loading="lazy" /></div></div><figcaption><strong>深肤色 · 唇色练习</strong><span>BEFORE / AFTER</span></figcaption></figure>
+          </div>
+          <p class="photo-caption">前后图来自现有练习脸与唇色目标资产，用于展示教学范围，不代表任意自拍效果。</p>
+        </section>
+
         <section class="section section-experience" id="experience">
           <div class="section-heading">
-            <p class="section-index">01 / 现在</p>
-            <h2>先把“怎样化”真正练一遍</h2>
+            <p class="section-index">03 / STEP BY STEP</p>
+            <h2>好看的妆，<br /><em>一步一步来。</em></h2>
             <p>当前版本专注单妆教学。每一步都有明确位置、颜色选择和完成进度，让练习不只是按一下就结束。</p>
           </div>
 
@@ -140,7 +209,7 @@
 
         <section class="section section-feedback" id="feedback">
           <div class="feedback-intro">
-            <p class="section-index">02 / 和观众一起改</p>
+            <p class="section-index">04 / MADE WITH YOU</p>
             <h2>这款 App 对你有用吗？</h2>
             <p>这是我们最想在 YouTube 听见的答案。你可以先组合一份反馈，再直接贴到留言区。</p>
             <button class="text-action" type="button" data-copy-youtube>
@@ -185,7 +254,7 @@
 
         <section class="section section-brands" id="brands">
           <div class="brand-collab-copy">
-            <p class="section-index">03 / 品牌合作可能</p>
+            <p class="section-index">05 / BRAND POSSIBILITIES</p>
             <h2>把真实产品与色号，放进可体验的教学里</h2>
             <p>品牌方可把自己的粉底、眼影、眼线和唇色整理成专属选择，让使用者在学习过程中认识产品，而不是只看到一张广告图。</p>
             <ul>
@@ -198,7 +267,7 @@
           <div class="shade-lab" aria-label="未来品牌色号选择概念">
             <div class="shade-lab-head"><span>BRAND SHADE LAB</span><small>未来概念</small></div>
             <div class="shade-product">
-              <div class="product-bottle" aria-hidden="true"><span></span></div>
+              <div class="product-bottle" aria-hidden="true"><img src="./assets/v2/lipstick.png" alt="" width="700" height="700" loading="lazy" /></div>
               <div><strong>Everyday Lip Color</strong><p>选择色号，比较适合自己的上脸感觉。</p></div>
             </div>
             <div class="shade-swatches" aria-label="示例唇色色号">
@@ -218,7 +287,7 @@
 
         <section class="section section-roadmap" aria-labelledby="roadmap-title">
           <div class="section-heading compact-heading">
-            <p class="section-index">04 / 产品路线</p>
+            <p class="section-index">06 / WHAT'S NEXT</p>
             <h2 id="roadmap-title">教学先做好，试妆再长出来</h2>
           </div>
           <div class="roadmap-grid">
@@ -230,7 +299,7 @@
 
         <section class="download-band" id="download">
           <div>
-            <p class="section-index">ANDROID TEST BUILD · V2.6.0</p>
+            <p class="section-index" data-apk-version>ANDROID TEST BUILD · V2.6.0</p>
             <h2>先用真实操作，告诉我们哪里还不够好。</h2>
             <p>目前是产品验证版本。安装前请允许浏览器下载 APK；新版会覆盖原来的测试版。</p>
           </div>
@@ -239,11 +308,11 @@
               <svg class="icon" aria-hidden="true"><use href="#icon-download" /></svg>
               下载测试 APK
             </a>
-            <a class="button button-ghost" data-demo-link href="http://127.0.0.1:4181/">
+            <a class="button button-ghost" data-demo-link href="./demo/">
               <svg class="icon" aria-hidden="true"><use href="#icon-play" /></svg>
               先在线体验
             </a>
-            <small>Android 7.0+ · 约 202 MB · 测试版本</small>
+            <small data-apk-details>Android 7.0+ · 约 202 MB · 测试版本</small>
           </div>
         </section>
       </main>
@@ -258,6 +327,8 @@
       </footer>
     </div>
 
+    <script src="./vendor/gsap-3.13.0.min.js" defer></script>
+    <script src="./vendor/ScrollTrigger-3.13.0.min.js" defer></script>
     <script src="./app.js" defer></script>
   </body>
 </html>
